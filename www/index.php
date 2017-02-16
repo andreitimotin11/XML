@@ -27,5 +27,6 @@ function onEnd($parser, $tag){
 function onText($parser, $text){
 	echo $text;
 }
+
 xml_set_element_handler($sax, "onStart","onEnd" );
 xml_set_character_data_handler($sax, "onText");
