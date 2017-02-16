@@ -9,8 +9,10 @@ function onStart($parser, $tag, $attributes ){
 	}
 	if($tag == "BOOK"){
 		echo "<tr>";
+
 	}
 }
+
 // Functia de prelucrare a tagurilor de sfarsit
 function onEnd($parser, $tag){
 	if($tag != "CATALOG" and $tag !="BOOK" ){
